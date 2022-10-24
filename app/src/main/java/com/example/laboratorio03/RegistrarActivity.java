@@ -47,7 +47,7 @@ public class RegistrarActivity extends AppCompatActivity {
                     datos=nombre+":"+apellidoM+":"+apellidoP+":"+fechaN+":"+carreraP+":"+codigoP+":"+DNI;
                     //Intent
                     Intent intentMenu = new Intent();
-                    intentMenu.putExtra("datos",datos);
+                    intentMenu.putExtra("",datos);
                     setResult(Activity.RESULT_OK,intentMenu);
                     finish();
                 }
