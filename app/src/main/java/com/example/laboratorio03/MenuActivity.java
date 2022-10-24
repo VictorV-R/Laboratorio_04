@@ -18,7 +18,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 public class MenuActivity extends AppCompatActivity {
-
+    private ListaPostulantes listaPostulantes;
     ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -26,11 +26,11 @@ public class MenuActivity extends AppCompatActivity {
                 public void onActivityResult(ActivityResult result) {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Intent data = result.getData();
-                        for (String key : data.getExtras().keySet()) {
-                            Object value = data.getExtras().get(key);
-                            Log.d("INFO", String.format("%s %s (%s)", key,
-                                    value.toString(), value.getClass().getName()));
-                        }
+                        String usuarioARegistrar=data.getStringExtra("datos");
+                        Log.d("INFO",usuarioARegistrar);
+                        String datos[]=usuarioARegistrar.split(":");
+                        listaPostulantes.añadirPostulante(datos[0],datos[1],datos[2]
+                        ,datos[3],datos[4],datos[5],Integer.parseInt(datos[6]));
                     }
                 }
             });
@@ -39,7 +39,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        ListaPostulantes listaPostulantes=new ListaPostulantes();
+        listaPostulantes=new ListaPostulantes();
         listaPostulantes.añadirPostulante("Alberto","Rojas","Vilca","11/11/2001","Sistemas","Example",777);
 
         Button registrar= findViewById(R.id.buttonRegistrarP);
