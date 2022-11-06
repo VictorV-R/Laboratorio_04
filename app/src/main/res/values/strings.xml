@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Laboratorio 03</string>
+    <string name="app_name">Laboratorio 05</string>
     <string name="login">Login</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
     <string name="hint_usuario">Nombre Usuario</string>
