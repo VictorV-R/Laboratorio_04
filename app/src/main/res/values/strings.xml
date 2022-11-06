@@ -9,4 +9,7 @@
     <string name="logo_epis_des">Este es el logo de la EPIS</string>
     <string name="ingeneria">INGENERIA</string>
     <string name="sistemas">I S T E M A S</string>
+    <string name="informacion_postulante">Info. Postulante</string>
+    <string name="registrar_postulante">Registrar Postulante</string>
+    <string name="seleccione_menu">Seleccione una opcion</string>
 </resources>

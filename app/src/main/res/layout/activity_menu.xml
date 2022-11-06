@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_act_gradient"
     tools:context=".MenuActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccione una opcion"
+        android:text="@string/seleccione_menu"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +25,8 @@
         android:id="@+id/buttonRegistrarP"
         android:layout_width="244dp"
         android:layout_height="57dp"
-        android:text="Registrar Postulante"
+        android:background="@drawable/btn_shape_capsule"
+        android:text="@string/registrar_postulante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -36,12 +38,13 @@
         android:id="@+id/buttonInfoP"
         android:layout_width="244dp"
         android:layout_height="57dp"
-        android:text="Info. Postulante"
+        android:background="@drawable/btn_shape_capsule"
+        android:text="@string/informacion_postulante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegistrarP"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.37"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
