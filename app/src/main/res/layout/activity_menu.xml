@@ -27,6 +27,7 @@
         android:layout_height="57dp"
         android:background="@drawable/btn_shape_capsule"
         android:text="@string/registrar_postulante"
+        app:icon="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -40,11 +41,12 @@
         android:layout_height="57dp"
         android:background="@drawable/btn_shape_capsule"
         android:text="@string/informacion_postulante"
+        app:icon="@drawable/ic_baseline_find_in_page_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegistrarP"
-        app:layout_constraintVertical_bias="0.37"/>
+        app:layout_constraintVertical_bias="0.37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,13 +23,14 @@
 
     <Button
         android:id="@+id/buttonBuscarDNI"
-        android:layout_width="93dp"
-        android:layout_height="45dp"
+        android:layout_width="138dp"
+        android:layout_height="55dp"
         android:text="Buscar"
         android:textSize="12sp"
+        app:icon="@drawable/ic_baseline_search_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toEndOf="@+id/inputDNI"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.063" />
@@ -123,6 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regresar"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
